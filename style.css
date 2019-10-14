@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: rgb(202, 202, 202);
+}
+
+.pass {
+    margin-left: 40%;
+    background-color: rgba(165,97,42,0.5);
+    font-size: 1.25em;
+    font-weight: bold;
+    border: none;
+    border-radius: 7px;
+    transition: background-color 0.2s ease-in-out;
+    padding: 1em;
+    cursor: pointer;
+}
+.pass:hover {
+    background-color: rgba(165,97,42,1);
+}
+
+.clock {
+    display: inline-block;
+    height: 1.2em;
+    width: 1.2em;
+    background: url("clock-regular.svg");
+    background-size: cover;
+}
+
+#time {
+    display: inline-block;
+    font-size: 2em;
+}
+
+#whos-turn {
+    display: inline-block;
+    font-size: 2em;
+}
+
+.text-middle {
+    text-align: center;
+}
+
+.board {
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    background: rgb(165, 97, 42);
+    border: 5px solid rgb(47, 47, 47);
+}
+td {
+    outline: 3px solid rgb(47, 47, 47);
+}
+
+.bg-bright {
+    background: rgba(255,255,255,0.5);
+}
+
+.bg-dark {
+    background: rgba(0,0,0,0.5);
+}
+
+.figurine {
+    display: inline-block;
+    width: 59px;
+    height: 59px;
+}
+.figurine:hover {
+    outline: 2px rgb(184, 53, 184) solid;
+}
+.white {
+    filter: invert(100%);
+}
+.queen {
+    background-image: url("chess-queen-solid.svg");
+    background-size: cover;
+}
+.rook {
+    background-image: url("chess-rook-solid.svg");
+    background-size: cover;
+}
+.king {
+    background-image: url("chess-king-solid.svg");
+    background-size: cover;
+}
+.bishop {
+    background-image: url("chess-bishop-solid.svg");
+    background-size: cover;
+}
+.knight {
+    background-image: url("chess-knight-solid.svg");
+    background-size: cover;
+}
+.pawn {
+    background-image: url("chess-pawn-solid.svg");
+    background-size: cover;
+}

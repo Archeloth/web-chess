@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script 
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" 
+        crossorigin="anonymous">
+    </script>
+    <script
+        src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+        integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+        crossorigin="anonymous"></script>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Web Chess</title>
+</head>
+<body>
+    <h1 class="text-middle">A Web chessboard for you and your friends :)</h1>
+
+    <button class="pass"><span class="clock"></span> Pass turn</button>
+    <p id="time">0:0</p>
+    <p id="whos-turn"></p>
+
+    <div class="figures text-middle">
+        <div class="figurine queen white draggable"></div>
+        <div class="figurine queen black draggable"></div>
+        <div class="figurine king white draggable"></div>
+        <div class="figurine king black draggable"></div>
+        <div class="figurine rook white draggable"></div>
+        <div class="figurine rook black draggable"></div>
+        <div class="figurine bishop white draggable"></div>
+        <div class="figurine bishop black draggable"></div>
+        <div class="figurine knight white draggable"></div>
+        <div class="figurine knight black draggable"></div>
+        <div class="figurine pawn white draggable"></div>
+        <div class="figurine pawn black draggable"></div>
+    </div>
+
+    <table class="board">
+        <tr>
+            <td class="bg-bright sp-rook"></td>
+            <td class="bg-dark sp-knight"></td>
+            <td class="bg-bright sp-bishop"></td>
+            <td class="bg-dark sp-king"></td>
+            <td class="bg-bright sp-queen"></td>
+            <td class="bg-dark sp-bishop"></td>
+            <td class="bg-bright sp-knight"></td>
+            <td class="bg-dark sp-rook"></td>
+        </tr>
+        <tr>
+            <td class="bg-dark"></td>
+            <td class="bg-bright"></td>
+            <td class="bg-dark"></td>
+            <td class="bg-bright"></td>
+            <td class="bg-dark"></td>
+            <td class="bg-bright"></td>
+            <td class="bg-dark"></td>
+            <td class="bg-bright"></td>
+        </tr>
+        <tr>
+            <td class="bg-bright"></td>
+            <td class="bg-dark"></td>
+            <td class="bg-bright"></td>
+            <td class="bg-dark"></td>
+            <td class="bg-bright"></td>
+            <td class="bg-dark"></td>
+            <td class="bg-bright"></td>
+            <td class="bg-dark"></td>
+        </tr>
+        <tr>
+            <td class="bg-dark"></td>
+            <td class="bg-bright"></td>
+            <td class="bg-dark"></td>
+            <td class="bg-bright"></td>
+            <td class="bg-dark"></td>
+            <td class="bg-bright"></td>
+            <td class="bg-dark"></td>
+            <td class="bg-bright"></td>
+        </tr>
+        <tr>
+            <td class="bg-bright"></td>
+            <td class="bg-dark"></td>
+            <td class="bg-bright"></td>
+            <td class="bg-dark"></td>
+            <td class="bg-bright"></td>
+            <td class="bg-dark"></td>
+            <td class="bg-bright"></td>
+            <td class="bg-dark"></td>
+        </tr>
+        <tr>
+            <td class="bg-dark"></td>
+            <td class="bg-bright"></td>
+            <td class="bg-dark"></td>
+            <td class="bg-bright"></td>
+            <td class="bg-dark"></td>
+            <td class="bg-bright"></td>
+            <td class="bg-dark"></td>
+            <td class="bg-bright"></td>
+        </tr>
+        <tr>
+            <td class="bg-bright"></td>
+            <td class="bg-dark"></td>
+            <td class="bg-bright"></td>
+            <td class="bg-dark"></td>
+            <td class="bg-bright"></td>
+            <td class="bg-dark"></td>
+            <td class="bg-bright"></td>
+            <td class="bg-dark"></td>
+        </tr>
+        <tr>
+            <td class="bg-dark"></td>
+            <td class="bg-bright"></td>
+            <td class="bg-dark"></td>
+            <td class="bg-bright"></td>
+            <td class="bg-dark"></td>
+            <td class="bg-bright"></td>
+            <td class="bg-dark"></td>
+            <td class="bg-bright"></td>
+        </tr>
+    </table>
+</body>
+</html>
